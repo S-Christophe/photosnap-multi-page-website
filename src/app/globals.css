@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "DmSans";
+  src: url("../../public/assets/fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DmSans-Bold";
+  src: url("../../public/assets/fonts/DMSans-Bold.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +27,8 @@
 }
 
 body {
+  font-size: 0.9375rem; /* Body font size = 15px */
+  line-height: 1.5625rem; /* Body line height = 25px */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +36,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+  line-height: 3rem; /* 48px */
+  letter-spacing: 0.260625rem; /* 4.17px */
+}
+
+h2 {
+  font-size: 1.5rem; /* 24px */
+}
+
+h3 {
+  font-size: 1.125rem; /* 18px */
+}
+
+h4 {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+  letter-spacing: 0.125rem; /* 2px */
 }
