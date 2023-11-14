@@ -30,13 +30,7 @@ body {
   font-size: 0.9375rem; /* Body font size = 15px */
   line-height: 1.5625rem; /* Body line height = 25px */
   font-family: "DmSans";
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
 }
 
 h1 {
