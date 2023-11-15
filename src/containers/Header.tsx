@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="flex flex-row items-center bg-white">
-      <Link href="/" className="py-7 pl-6">
+      <Link href="/" className="my-7 ml-6 md:ml-[2.46875rem]">
         <Image
           src="./assets/images/shared/desktop/logo.svg"
           alt="Photosnap"
@@ -25,9 +25,9 @@ export default function Header() {
         initial="hidden"
         animate={isActive ? "visible" : "hidden"}
         variants={animateMenu}
-        className="absolute top-[4.5rem] w-full bg-white px-[2.03125rem] py-8"
+        className="absolute top-[4.5rem] w-full bg-white px-[2.03125rem] py-8 md:static md:ml-auto md:mr-[2.46875rem] md:!block md:w-auto md:px-0 md:py-0 md:!opacity-100"
       >
-        <ul className="font-DmSansBold flex flex-col gap-5 text-center uppercase tracking-[0.15625rem]">
+        <ul className="flex flex-col gap-5 text-center font-DmSansBold uppercase tracking-[0.15625rem] md:flex-row md:items-center md:gap-[2.3125rem] md:text-[0.75rem] md:tracking-[0.125rem]">
           <li>
             <Link href="#">Stories</Link>
           </li>
@@ -37,10 +37,10 @@ export default function Header() {
           <li>
             <Link href="#">Pricing</Link>
           </li>
-          <li className="relative mt-5 before:absolute before:-top-5 before:left-0 before:w-full before:border">
+          <li className="relative mt-5 before:absolute before:-top-5 before:left-0 before:w-full before:border md:ml-[0.875rem] md:mt-0 md:before:hidden">
             <Link
               href="#"
-              className="block w-full bg-black py-[0.875rem] text-white"
+              className="block w-full bg-black py-[0.875rem] text-white md:px-6 md:py-3"
             >
               Get an invite
             </Link>
