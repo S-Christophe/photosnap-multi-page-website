@@ -50,15 +50,20 @@ export default function HomeCard({
         <p className="mb-[1.4375rem] opacity-60">{description}</p>
         <Link
           href="#"
-          className="font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]"
+          className={` flex items-center ${
+            index == 0 ? "gap-[1.125rem]" : "gap-[1.625rem]"
+          } font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]`}
         >
           {link}
-          {/* <Image
-              src="./assets/images/icon-arrow.svg"
-              alt="icon arrow"
-              width={16}
-              height={16}
-            /> */}
+          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke={`${index == 0 ? "#fff" : "#000"}`}
+            >
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
         </Link>
       </div>
     </div>
