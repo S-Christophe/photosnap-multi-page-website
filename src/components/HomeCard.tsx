@@ -22,49 +22,59 @@ export default function HomeCard({
 
   return (
     <div
-      className={`flex ${index == 0 && "min-h-[calc(100vh-4.5rem)]"} flex-col`}
+      className={`flex ${
+        index == 0 && "min-h-[calc(100vh-4.5rem)]"
+      } flex-col md:flex-row`}
     >
-      <div className="relative aspect-[9/7] w-full">
-        <Image src={img} alt={name} fill style={{ objectFit: "cover" }} />
+      <div
+        className={`relative aspect-[9/7] w-full md:min-h-[37.5rem] md:w-[36%] ${
+          (index == 0 || index == 2) && "md:order-2"
+        }`}
+      >
+        <Image src={imgMd} alt={name} fill style={{ objectFit: "cover" }} />
       </div>
 
       <div
-        className={`flex ${
+        className={`flex md:w-[64%] ${
           index == 0 && "flex-1"
-        }  aspect-[9/10] flex-col justify-center px-[1.78125rem] py-[4.5rem] ${
+        }  aspect-[9/10] flex-col items-center justify-center px-[1.78125rem] py-[4.5rem] ${
           index == 1 || index == 2
             ? "bg-white text-black"
             : "bg-black text-white"
         }`}
       >
-        {index == 0 ? (
-          <h1 className="mb-4 max-w-[15ch] font-DmSansBold text-[2rem] uppercase leading-10 tracking-[0.208125rem]">
-            {name}
-          </h1>
-        ) : (
-          <h2 className="mb-4 max-w-[12ch]  font-DmSansBold text-[2rem] uppercase leading-10 tracking-[0.208125rem]">
-            {name}
-          </h2>
-        )}
+        <div>
+          {index == 0 ? (
+            <h1 className="mb-4 max-w-[15ch] font-DmSansBold text-[2rem] uppercase leading-10 tracking-[0.208125rem] md:mb-[1.3125rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.260625rem]">
+              {name}
+            </h1>
+          ) : (
+            <h2 className="mb-4 max-w-[12ch] font-DmSansBold  text-[2rem] uppercase leading-10 tracking-[0.208125rem] md:mb-[1.3125rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.260625rem]">
+              {name}
+            </h2>
+          )}
 
-        <p className="mb-[1.4375rem] opacity-60">{description}</p>
-        <Link
-          href="#"
-          className={` flex items-center ${
-            index == 0 ? "gap-[1.125rem]" : "gap-[1.625rem]"
-          } font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]`}
-        >
-          {link}
-          <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
-            <g
-              fill="none"
-              fillRule="evenodd"
-              stroke={`${index == 0 ? "#fff" : "#000"}`}
-            >
-              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
-            </g>
-          </svg>
-        </Link>
+          <p className="mb-[1.4375rem] max-w-[40ch] opacity-60 md:mb-12">
+            {description}
+          </p>
+          <Link
+            href="#"
+            className={` flex items-center ${
+              index == 0 ? "gap-[1.125rem]" : "gap-[1.625rem]"
+            } font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]`}
+          >
+            {link}
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g
+                fill="none"
+                fillRule="evenodd"
+                stroke={`${index == 0 ? "#fff" : "#000"}`}
+              >
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </Link>
+        </div>
       </div>
     </div>
   );
