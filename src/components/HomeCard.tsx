@@ -1,9 +1,11 @@
+"use client";
+
 // import vendors
 import Link from "next/link";
 import Image from "next/image";
 
 // import hooks
-// import useMediaQuery from "@/hooks/useMediaQuery";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 // import types
 import { IHomeArticle } from "@/types/HomeArticle";
@@ -18,7 +20,8 @@ export default function HomeCard({
   imgLg,
   index,
 }: IHomeArticle) {
-  //   const isDesktop = useMediaQuery("(min-width: 62rem)");
+  const isTablet = useMediaQuery("(min-width: 48rem)");
+  const isDesktop = useMediaQuery("(min-width: 80rem)");
 
   return (
     <div
@@ -31,7 +34,12 @@ export default function HomeCard({
           (index == 0 || index == 2) && "md:order-2"
         }`}
       >
-        <Image src={imgMd} alt={name} fill style={{ objectFit: "cover" }} />
+        <Image
+          src={isDesktop ? imgLg : isTablet ? imgMd : img}
+          alt={name}
+          fill
+          style={{ objectFit: "cover" }}
+        />
       </div>
 
       <div
