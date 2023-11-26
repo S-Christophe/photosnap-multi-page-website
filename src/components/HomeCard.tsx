@@ -30,7 +30,7 @@ export default function HomeCard({
       } flex-col md:flex-row`}
     >
       <div
-        className={`relative aspect-[9/7] w-full md:min-h-[37.5rem] md:w-[36%] ${
+        className={`relative aspect-[9/7] w-full md:min-h-[37.5rem] md:w-[36%] xl:w-[58%] ${
           (index == 0 || index == 2) && "md:order-2"
         }`}
       >
@@ -43,7 +43,7 @@ export default function HomeCard({
       </div>
 
       <div
-        className={`flex md:w-[64%] ${
+        className={`flex md:w-[64%] xl:w-[42%] ${
           index == 0 && "flex-1"
         }  aspect-[9/10] flex-col items-center justify-center px-[1.78125rem] py-[4.5rem] ${
           index == 1 || index == 2
