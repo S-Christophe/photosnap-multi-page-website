@@ -29,7 +29,7 @@ export default function FeatureCard({
         <h2 className="mb-4 font-DmSansBold text-lg leading-[1.5625rem]">
           {name}
         </h2>
-        <p>{description}</p>
+        <p className="max-w-[45ch]">{description}</p>
       </div>
     </div>
   );
