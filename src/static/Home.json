@@ -29,5 +29,27 @@
     }
   ],
   "stories": [],
-  "features": []
+  "features": [
+    {
+      "name": "100% Responsive",
+      "description": "No matter which the device you're on, our site is fully responsive and stories look beautiful on any screen.",
+      "img": "./assets/images/features/desktop/responsive.svg",
+      "width": 72,
+      "height": 72
+    },
+    {
+      "name": "No Photo Upload Limit",
+      "description": "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of you stories in one go.",
+      "img": "./assets/images/features/desktop/no-limit.svg",
+      "width": 72,
+      "height": 36
+    },
+    {
+      "name": "Available to Embed",
+      "description": "Embed Tweets, Facebook posts, Instagram media, Vimeo or Youtube videos, Google Maps, and more.",
+      "img": "./assets/images/features/desktop/embed.svg",
+      "width": 71,
+      "height": 72
+    }
+  ]
 }
