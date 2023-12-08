@@ -21,7 +21,7 @@ export default function FeatureCard({
 }: IFeature) {
   return (
     <div className="flex flex-col items-center gap-12 text-center">
-      <div>
+      <div className="flex h-[4.5rem] items-center">
         <Image src={img} alt={name} width={width} height={height} />
       </div>
 
