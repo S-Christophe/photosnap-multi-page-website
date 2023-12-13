@@ -39,9 +39,9 @@ const socialNetworks = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-[7.4375rem] bg-black">
+    <footer className="flex flex-col gap-[7.4375rem] bg-black py-14 md:flex-row md:gap-0 md:px-10 md:py-16">
       <div className="grid justify-center gap-8 text-center">
-        <a href="/" className="mt-14">
+        <a href="/" className="order-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
             <defs>
               <linearGradient id="a" x1="0%" x2="50%" y1="85.457%" y2="14.543%">
@@ -60,7 +60,7 @@ export default function Footer() {
             </g>
           </svg>
         </a>
-        <div className="flex justify-center gap-[0.833125rem]">
+        <div className="order-2 flex justify-center gap-[0.833125rem] md:order-3 md:mt-10 md:justify-start">
           {socialNetworks.map((item, i) => (
             <Link key={i} href="#" className="">
               <Image
@@ -72,8 +72,8 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <nav className="mt-[1.0625rem]">
-          <ul className="flex flex-col gap-[1.1875rem] font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem] text-white">
+        <nav className="order-3 mt-[1.0625rem] md:order-2 md:mt-0">
+          <ul className="flex flex-col gap-[1.1875rem] font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem] text-white md:flex-row md:gap-[1.625rem]">
             {links.map((name, i) => (
               <li key={i}>
                 <Link href="#" className="">
@@ -84,7 +84,7 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-      <div className="mb-14 flex flex-col items-center gap-[2.125rem]">
+      <div className="flex flex-col items-center gap-[2.125rem] md:ml-auto md:items-end">
         <Link
           href="#"
           className="flex items-center gap-[1.375rem] font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem] text-white"
@@ -96,7 +96,7 @@ export default function Footer() {
             </g>
           </svg>
         </Link>
-        <p className="text-white opacity-60">
+        <p className="text-white opacity-60 md:mt-auto">
           Copyright 2019. All Rights Reserved
         </p>
       </div>
