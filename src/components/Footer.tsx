@@ -39,8 +39,8 @@ const socialNetworks = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-[7.4375rem] bg-black py-14 md:flex-row md:gap-0 md:px-10 md:py-16">
-      <div className="grid justify-center gap-8 text-center">
+    <footer className="flex flex-col gap-[7.4375rem] bg-black py-14 md:flex-row md:gap-0 md:px-10 md:py-16 lg:px-[10.5rem]">
+      <div className="grid justify-center gap-8 lg:grid-cols-2 lg:gap-x-[6.8125rem]">
         <a href="/" className="order-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
             <defs>
@@ -60,7 +60,7 @@ export default function Footer() {
             </g>
           </svg>
         </a>
-        <div className="order-2 flex justify-center gap-[0.833125rem] md:order-3 md:mt-10 md:justify-start">
+        <div className="order-2 flex justify-center gap-[0.833125rem] md:order-3 md:mt-10 md:justify-start lg:mt-0 lg:items-end">
           {socialNetworks.map((item, i) => (
             <Link key={i} href="#" className="">
               <Image
@@ -72,8 +72,8 @@ export default function Footer() {
             </Link>
           ))}
         </div>
-        <nav className="order-3 mt-[1.0625rem] md:order-2 md:mt-0">
-          <ul className="flex flex-col gap-[1.1875rem] font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem] text-white md:flex-row md:gap-[1.625rem]">
+        <nav className="order-3 mt-[1.0625rem] md:order-2 md:mt-0 lg:row-span-2">
+          <ul className="flex flex-col gap-[1.1875rem] text-center font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem] text-white md:flex-row md:gap-[1.625rem] lg:flex-col lg:gap-[1.1875rem] lg:text-start">
             {links.map((name, i) => (
               <li key={i}>
                 <Link href="#" className="">
