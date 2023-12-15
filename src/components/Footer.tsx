@@ -39,7 +39,7 @@ const socialNetworks = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-[7.4375rem] bg-black py-14 md:flex-row md:gap-0 md:px-10 md:py-16 lg:px-[10.5rem]">
+    <footer className="flex flex-col gap-[7.4375rem] bg-black py-14 md:flex-row md:gap-0 md:px-10 md:py-16 lg:px-[10.3125rem]">
       <div className="grid justify-center gap-8 lg:grid-cols-2 lg:gap-x-[6.8125rem]">
         <a href="/" className="order-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
