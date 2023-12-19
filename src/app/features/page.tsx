@@ -4,7 +4,7 @@ import datas from "../../static/Features.json";
 // import components
 import FeatureCard from "@/components/FeatureCard";
 
-export default function Home() {
+export default function Features() {
   return (
     <main>
       {/* section Feature Card */}

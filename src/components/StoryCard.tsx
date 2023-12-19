@@ -10,13 +10,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 // import types
 import { IStory } from "@/types/Story";
 
-export default function StoryCard({
-  title,
-  author,
-  img,
-  imgMd,
-  imgLg,
-}: IStory) {
+export default function StoryCard({ title, author, img, imgLg }: IStory) {
   const isTablet = useMediaQuery("(min-width: 48rem)");
   const isDesktop = useMediaQuery("(min-width: 80rem)");
 
