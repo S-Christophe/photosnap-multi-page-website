@@ -10,7 +10,30 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 // import types
 import { IStory } from "@/types/Story";
 
-export default function StoryCard({ title, author, img, imgLg }: IStory) {
+/**
+ * Get Date in format (MM DD YYYY)
+ */
+function parseDate(date: any) {
+  const newDate = new Date(date);
+  let year = newDate.getFullYear();
+  let month = newDate.toLocaleString("default", { month: "long" });
+  let day = newDate.getDate().toString();
+
+  if (day == "1") day = day + "st";
+  else if (day == "2" || day == "3") day = day + "nd";
+  else day = day + "th";
+
+  return `${month} ${day} ${year}`;
+}
+
+export default function StoryCard({
+  title,
+  author,
+  img,
+  date,
+  showDate,
+  imgLg,
+}: IStory) {
   const isTablet = useMediaQuery("(min-width: 48rem)");
   const isDesktop = useMediaQuery("(min-width: 80rem)");
 
@@ -25,6 +48,7 @@ export default function StoryCard({ title, author, img, imgLg }: IStory) {
         />
       </div>
       <div className="absolute bottom-10 left-0 right-0 mx-auto w-[calc(100%-64px)] text-white">
+        {showDate && <p>{parseDate(date)}</p>}
         <p className="flex font-DmSansBold text-lg leading-[1.5625rem]">
           {title}
         </p>

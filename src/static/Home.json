@@ -32,24 +32,28 @@
     {
       "title": "The Mountains",
       "author": "John Appleseed",
+      "date": "2020-04-16",
       "img": "/assets/images/stories/mobile/mountains.jpg",
       "imgLg": "/assets/images/stories/desktop/mountains.jpg"
     },
     {
       "title": "Sunset Cityscapes",
       "author": "Benjamin Cruz",
+      "date": "2020-04-14",
       "img": "/assets/images/stories/mobile/cityscapes.jpg",
       "imgLg": "/assets/images/stories/desktop/cityscapes.jpg"
     },
     {
       "title": "18 Days Voyage",
       "author": "Alexei Borodin",
+      "date": "2020-04-11",
       "img": "/assets/images/stories/mobile/18-days-voyage.jpg",
       "imgLg": "/assets/images/stories/desktop/18-days-voyage.jpg"
     },
     {
       "title": "Architecturals",
       "author": "Samantha Brooke",
+      "date": "2020-04-09",
       "img": "/assets/images/stories/mobile/architecturals.jpg",
       "imgLg": "/assets/images/stories/desktop/architecturals.jpg"
     }

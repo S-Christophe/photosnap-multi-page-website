@@ -20,7 +20,7 @@ export default function Home() {
       {/* section Stories Card */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {datas.stories.map((item, i) => (
-          <StoryCard key={i} {...item} />
+          <StoryCard key={i} showDate={false} {...item} />
         ))}
       </section>
 
