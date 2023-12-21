@@ -3,6 +3,7 @@ import datas from "../../static/Features.json";
 
 // import components
 import FeatureCard from "@/components/FeatureCard";
+import GetInviteCard from "@/components/GetInviteCard";
 
 export default function Features() {
   return (
@@ -12,6 +13,9 @@ export default function Features() {
         {datas.features.map((item, i) => (
           <FeatureCard key={i} {...item} />
         ))}
+      </section>
+      <section>
+        <GetInviteCard {...datas.GetInvite} />
       </section>
     </main>
   );

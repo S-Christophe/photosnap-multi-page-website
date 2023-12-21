@@ -42,5 +42,11 @@
       "width": 91,
       "height": 72
     }
-  ]
+  ],
+  "GetInvite": {
+    "title": "We're in Beta. Get your invite today!",
+    "img": "/assets/images/shared/mobile/bg-beta.jpg",
+    "imgMd": "/assets/images/shared/tablet/bg-beta.jpg",
+    "imgLg": "/assets/images/shared/desktop/bg-beta.jpg"
+  }
 }
