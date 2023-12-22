@@ -6,5 +6,5 @@ export interface IHomeArticle {
   img: string;
   imgMd: string;
   imgLg: string;
-  index: number;
+  [key: string]: any;
 }

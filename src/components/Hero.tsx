@@ -18,22 +18,20 @@ export default function HomeCard({
   img,
   imgMd,
   imgLg,
-  index,
+  ...props
 }: IHomeArticle) {
   const isTablet = useMediaQuery("(min-width: 48rem)");
   const isDesktop = useMediaQuery("(min-width: 80rem)");
 
-  console.log(name);
-
   return (
     <div
       className={`flex ${
-        index == 0 && "min-h-[calc(100vh-4.5rem)]"
+        props.index == 0 && "min-h-[calc(100vh-4.5rem)]"
       } flex-col md:flex-row`}
     >
       <div
         className={`relative aspect-[9/7] w-full md:min-h-[37.5rem] md:w-[36%] xl:w-[58%] ${
-          (index == 0 || index == 2) && "md:order-2"
+          (props.index == 0 || props.index == 2) && "md:order-2"
         }`}
       >
         <Image
@@ -46,15 +44,15 @@ export default function HomeCard({
 
       <div
         className={`flex md:w-[64%] xl:w-[42%] ${
-          index == 0 && "flex-1"
+          props.index == 0 && "flex-1"
         }  aspect-[9/10] flex-col items-center justify-center px-[1.78125rem] py-[4.5rem] ${
-          index == 1 || index == 2
+          props.index == 1 || props.index == 2
             ? "bg-white text-black"
             : "bg-black text-white"
         }`}
       >
         <div>
-          {index == 0 ? (
+          {props.index == 0 ? (
             <h1 className="mb-4 max-w-[15ch] font-DmSansBold text-[2rem] uppercase leading-10 tracking-[0.208125rem] md:mb-[1.3125rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.260625rem]">
               {name}
             </h1>
@@ -71,7 +69,7 @@ export default function HomeCard({
             <Link
               href="#"
               className={` flex items-center ${
-                index == 0 ? "gap-[1.125rem]" : "gap-[1.625rem]"
+                props.index == 0 ? "gap-[1.125rem]" : "gap-[1.625rem]"
               } font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]`}
             >
               {link}
@@ -79,7 +77,7 @@ export default function HomeCard({
                 <g
                   fill="none"
                   fillRule="evenodd"
-                  stroke={`${index == 0 ? "#fff" : "#000"}`}
+                  stroke={`${props.index == 0 ? "#fff" : "#000"}`}
                 >
                   <path d="M0 7h41.864M35.428 1l6 6-6 6" />
                 </g>
