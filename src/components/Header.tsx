@@ -38,7 +38,7 @@ export default function Header() {
             <Link href="/features">Features</Link>
           </li>
           <li className="md:ml-[2.3125rem]">
-            <Link href="#">Pricing</Link>
+            <Link href="/pricing">Pricing</Link>
           </li>
           <li className="relative mt-5 before:absolute before:-top-5 before:left-0 before:w-full before:border md:ml-auto md:mt-0 md:before:hidden">
             <Link
