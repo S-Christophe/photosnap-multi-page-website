@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "name": "Features",
+    "description": "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
+    "img": "/assets/images/features/mobile/hero.jpg",
+    "imgMd": "/assets/images/features/tablet/hero.jpg",
+    "imgLg": "/assets/images/features/desktop/hero.jpg"
+  },
   "features": [
     {
       "name": "100% Responsive",
@@ -43,7 +50,7 @@
       "height": 72
     }
   ],
-  "GetInvite": {
+  "getInvite": {
     "title": "We're in Beta. Get your invite today!",
     "img": "/assets/images/shared/mobile/bg-beta.jpg",
     "imgMd": "/assets/images/shared/tablet/bg-beta.jpg",

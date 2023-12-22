@@ -1,0 +1,9 @@
+{
+  "hero": {
+    "name": "Pricing",
+    "description": "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It's the simple way to create and hsare your photos.",
+    "img": "/assets/images/pricing/mobile/hero.jpg",
+    "imgMd": "/assets/images/pricing/tablet/hero.jpg",
+    "imgLg": "/assets/images/pricing/desktop/hero.jpg"
+  }
+}

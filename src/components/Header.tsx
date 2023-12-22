@@ -32,10 +32,10 @@ export default function Header() {
       >
         <ul className="flex flex-col gap-5 text-center font-DmSansBold uppercase tracking-[0.15625rem] md:flex-row md:items-center md:gap-0 md:text-[0.75rem] md:tracking-[0.125rem]">
           <li className="md:ml-auto">
-            <Link href="#">Stories</Link>
+            <Link href="/stories">Stories</Link>
           </li>
           <li className="md:ml-[2.3125rem]">
-            <Link href="#">Features</Link>
+            <Link href="/features">Features</Link>
           </li>
           <li className="md:ml-[2.3125rem]">
             <Link href="#">Pricing</Link>
