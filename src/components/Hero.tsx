@@ -8,7 +8,7 @@ import Image from "next/image";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 // import types
-import { IHomeArticle } from "@/types/HomeArticle";
+import { IHomeArticle } from "@/types/Hero";
 
 export default function HomeCard({
   name,

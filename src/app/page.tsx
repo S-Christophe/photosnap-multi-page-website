@@ -2,7 +2,7 @@
 import datas from "../static/Home.json";
 
 // import components
-import HomeCard from "@/components/HomeCard";
+import Hero from "@/components/Hero";
 import FeatureCard from "@/components/FeatureCard";
 import StoryCard from "@/components/StoryCard";
 
@@ -13,7 +13,7 @@ export default function Home() {
       {/* section Home Card */}
       <section className="">
         {datas.cards.map((item, i) => (
-          <HomeCard key={i} index={i} {...item} />
+          <Hero key={i} index={i} {...item} />
         ))}
       </section>
 
