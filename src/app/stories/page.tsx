@@ -35,8 +35,8 @@ export default function Stories() {
 
   return (
     <main>
-      <section className="flex min-h-[calc(100vh-4.5rem)] flex-col">
-        <div className="relative aspect-[9/7] w-full">
+      <section className="flex min-h-[calc(100vh-4.5rem)] flex-col md:relative">
+        <div className="relative aspect-[9/7] w-full md:absolute md:z-10 md:h-full">
           <Image
             src={
               isDesktop
@@ -50,18 +50,18 @@ export default function Stories() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="flex flex-1 flex-col justify-center bg-black px-[1.78125rem] py-[4.5rem] text-white">
+        <div className="flex flex-1 flex-col justify-center bg-black px-[1.78125rem] py-[4.5rem] text-white md:z-20 md:bg-transparent">
           <p className="mb-4 font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]">
             Last month's featured story
           </p>
-          <h1 className="mb-4 max-w-[10ch] font-DmSansBold text-[2rem] uppercase leading-10 tracking-[0.208125rem]">
+          <h1 className="mb-4 max-w-[10ch] font-DmSansBold text-[2rem] uppercase leading-10 tracking-[0.208125rem] md:mb-[1.3125rem] md:text-[2.5rem] md:leading-[3rem] md:tracking-[0.260625rem]">
             {datas.hero.title}
           </h1>
           <p className="mb-6 text-[0.8125rem]">
             <span className="opacity-60">{parseDate(datas.hero.date)}</span> by{" "}
             {datas.hero.author}
           </p>
-          <p className="mb-[1.4375rem] max-w-[40ch] opacity-60">
+          <p className="mb-[1.4375rem] max-w-[40ch] opacity-60 md:mb-12">
             {datas.hero.description}
           </p>
           <Link
