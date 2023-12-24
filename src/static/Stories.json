@@ -1,4 +1,15 @@
 {
+  "hero": {
+    "title": "Hazy full moon of appalachia",
+    "author": "John Appleseed",
+    "date": "2020-03-02",
+    "link": "Read the story",
+    "url": "/",
+    "description": "The dissected plateau area, while not actually made up of geological mountains, is popularly called 'mountains,' especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.",
+    "img": "/assets/images/stories/mobile/moon-of-appalacia.jpg",
+    "imgMd": "/assets/images/stories/tablet/moon-of-appalacia.jpg",
+    "imgLg": "/assets/images/stories/desktop/moon-of-appalacia.jpg"
+  },
   "stories": [
     {
       "title": "The Mountains",
