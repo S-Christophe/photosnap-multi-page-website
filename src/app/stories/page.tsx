@@ -20,6 +20,8 @@ function parseDate(date: any) {
   const newDate = new Date(date);
   let year = newDate.getFullYear();
   let month = newDate.toLocaleString("default", { month: "long" });
+  month = month.charAt(0).toUpperCase() + month.slice(1);
+
   let day = newDate.getDate().toString();
 
   if (day == "1") day = day + "st";
@@ -31,7 +33,7 @@ function parseDate(date: any) {
 
 export default function Stories() {
   const isTablet = useMediaQuery("(min-width: 48rem)");
-  const isDesktop = useMediaQuery("(min-width: 80rem)");
+  const isDesktop = useMediaQuery("(min-width: 90rem)");
 
   return (
     <main>
@@ -50,7 +52,7 @@ export default function Stories() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="flex flex-1 flex-col justify-center bg-black px-[1.78125rem] py-[4.5rem] text-white md:z-20 md:bg-transparent">
+        <div className="flex flex-1 flex-col justify-center bg-black px-[1.78125rem] py-[4.5rem] text-white md:z-20 md:bg-transparent md:px-10 lg:px-28">
           <p className="mb-4 font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]">
             Last month's featured story
           </p>
