@@ -68,7 +68,7 @@ export default function Stories() {
           </p>
           <Link
             href="#"
-            className="flex items-center gap-[1.125rem] font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]"
+            className="flex w-fit items-center gap-[1.125rem] font-DmSansBold text-xs uppercase leading-[1.5625rem] tracking-[0.125rem]"
           >
             {datas.hero.link}
             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
