@@ -37,6 +37,7 @@ export default function Stories() {
 
   return (
     <main>
+      {/* section Hero */}
       <section className="flex min-h-[calc(100vh-4.5rem)] flex-col md:relative">
         <div className="relative aspect-[9/7] w-full md:absolute md:z-10 md:h-full">
           <Image
