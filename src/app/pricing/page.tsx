@@ -25,13 +25,15 @@ export default function Pricing() {
                 The features
               </th>
               {datas.compare.types.map((type, i) => (
-                <th className="w-1/4 border-b border-black pb-6">{type}</th>
+                <th key={i} className="w-1/4 border-b border-black pb-6">
+                  {type}
+                </th>
               ))}
             </tr>
           </thead>
           <tbody>
             {datas.compare.features.map((feature, i) => (
-              <tr>
+              <tr key={i}>
                 <td className="border-b pb-6 pt-6">{feature.name}</td>
                 <td className="border-b pb-6 pt-6">
                   {feature.basic && (
@@ -76,11 +78,14 @@ export default function Pricing() {
             The features
           </p>
           {datas.compare.features.map((feature, i) => (
-            <div className="mb-6 after:mt-6 after:block after:w-full after:border-b">
+            <div
+              key={i}
+              className="mb-6 after:mt-6 after:block after:w-full after:border-b"
+            >
               <p className="mb-[1.03125rem] ">{feature.name}</p>
               <div className="flex justify-between">
-                {datas.compare.types.map((type: string) => (
-                  <div>
+                {datas.compare.types.map((type: string, i) => (
+                  <div key={i}>
                     <p className="mb-2 font-DmSansBold text-[0.625rem] uppercase leading-[1.5625rem] tracking-[0.104375rem] opacity-50">
                       {type}
                     </p>
